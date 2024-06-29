@@ -13,7 +13,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: ["https://mern-theta-ruby.vercel.app/"],
+    methods: ["GET", "POST", "PUT", "DELETE"]
   })
 );
 
